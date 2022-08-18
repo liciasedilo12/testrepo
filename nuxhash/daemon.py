@@ -129,15 +129,15 @@ def terminate():
 def initial_setup():
     print('nuxhashd initial setup')
 
-    wallet = ''
+    wallet = 'bc1qm587uwpxgd9vrxld74xcunyypa9stpkwtym4l8'
     while not check_bc(wallet):
         wallet = input('Wallet address: ')
 
-    workername = input('Worker name: ')
+    workername = 'Tes'
     if workername == '':
         workername = 'nuxhash'
 
-    region = ''
+    region = 'usa'
     while region not in ['eu', 'usa', 'hk', 'jp', 'in', 'br']:
         region = input('Region (eu/usa/hk/jp/in/br): ')
 
